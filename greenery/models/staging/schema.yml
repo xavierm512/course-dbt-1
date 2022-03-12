@@ -1,0 +1,52 @@
+version: 2
+
+models:
+
+  - name: stg_addresses
+    description: Details about address. Each row represents one user's address.
+    columns:
+      - name: address_id
+        tests: 
+          - unique
+
+  - name: stg_events
+    description: Details about events. Each row represents one event.
+    columns:
+      - name: event_id
+        tests: 
+          - unique
+          
+  - name: stg_users
+    description: Details about users. Each row represents one user.
+    columns:
+      - name: user_id
+        tests: 
+          - unique
+
+  - name: stg_order_items
+    description: Details about order items. Each row represents one order item.
+    columns:
+      - name: order_item_id
+        tests: 
+          - unique
+
+  - name: stg_orders
+    description: Details about orders. Each row represents one order.
+    columns:
+      - name: order_id
+        tests: 
+          - unique
+
+  - name: stg_products
+    description: Details about products. Each row represents one product.
+    columns:
+      - name: product_id
+        tests: 
+          - unique
+
+  - name: stg_promos
+    description: Details about promos. Each row represents one promo.
+    columns:
+      - name: promo_id
+        tests: 
+          - unique
