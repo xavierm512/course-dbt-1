@@ -12,5 +12,5 @@ select
     e.product_id,
     e.page_url,
     e.event_type,
-    e.created_at as event_at
+    e.created_at as event_at_utc
 from events e

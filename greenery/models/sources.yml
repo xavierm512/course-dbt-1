@@ -11,9 +11,18 @@ sources:
 
     tables:
       - name: orders
+        loaded_at_field: created_at
+
       - name: users
+        loaded_at_field: created_at
+
       - name: events
+        loaded_at_field: event_at
+
       - name: addresses
+
       - name: order_items
+
       - name: products
+
       - name: promos

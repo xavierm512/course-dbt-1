@@ -1,0 +1,11 @@
+version: 2
+
+models:
+
+  - name: fact_user_orders
+    description: Facts and details about orders rolled up to the user level. Each row represents on user.
+    columns:
+      - name: user_id
+        tests: 
+          - unique
+          - not_null

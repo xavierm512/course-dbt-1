@@ -8,6 +8,7 @@ models:
       - name: address_id
         tests: 
           - unique
+          - not_null
 
   - name: stg_events
     description: Details about events. Each row represents one event.
@@ -15,6 +16,7 @@ models:
       - name: event_id
         tests: 
           - unique
+          - not_null
           
   - name: stg_users
     description: Details about users. Each row represents one user.
@@ -22,6 +24,7 @@ models:
       - name: user_id
         tests: 
           - unique
+          - not_null
 
   - name: stg_order_items
     description: Details about order items. Each row represents one order item.
@@ -29,6 +32,7 @@ models:
       - name: order_item_id
         tests: 
           - unique
+          - not_null
 
   - name: stg_orders
     description: Details about orders. Each row represents one order.
@@ -36,6 +40,7 @@ models:
       - name: order_id
         tests: 
           - unique
+          - not_null
 
   - name: stg_products
     description: Details about products. Each row represents one product.
@@ -43,6 +48,7 @@ models:
       - name: product_id
         tests: 
           - unique
+          - not_null
 
   - name: stg_promos
     description: Details about promos. Each row represents one promo.
@@ -50,3 +56,4 @@ models:
       - name: promo_id
         tests: 
           - unique
+          - not_null
