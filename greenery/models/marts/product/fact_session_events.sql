@@ -1,3 +1,11 @@
+{{
+  config(
+    materialized = "table",
+    sort = 'event_time',
+    dist = 'event_id'
+  )
+}}
+
 with events as (
     select * from {{ ref('stg_events') }}
 ),
@@ -11,7 +19,6 @@ user_sessions as (
     select
         e.session_id,
         e.user_id
-
     from
         events e
     group by 1,2)

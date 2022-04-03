@@ -1,0 +1,14 @@
+version: 2
+
+exposures:
+  
+  - name: product_funnel_report
+    type: analysis
+    url: https://bi.tool/dashboards/1
+    
+    depends_on:
+      - ref('fact_session_events')
+      
+    owner:
+      name: Xavier
+      email: xavier@greenery.com
